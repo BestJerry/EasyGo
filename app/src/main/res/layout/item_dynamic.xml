@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_head_picture"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="6dp"
+        android:src="@drawable/ic_person2"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_head_picture"
+        android:layout_marginStart="16dp"
+        android:layout_alignTop="@id/iv_head_picture"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Jerry"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_alignStart="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:singleLine="false"
+        android:inputType="textMultiLine"
+        android:layout_marginEnd="6dp"
+        tools:text="今天天气真好呀。"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/tv_content"
+        android:layout_alignStart="@id/tv_name"
+        tools:text="2019.04.05"/>
+
+    <TextView
+        android:id="@+id/tv_recommend_level_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_date"
+        android:layout_alignTop="@id/tv_date"
+        android:layout_marginStart="24dp"
+        android:text="推荐等级："/>
+
+    <TextView
+        android:id="@+id/tv_recommend_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_recommend_level_title"
+        android:layout_toEndOf="@id/tv_recommend_level_title"
+        tools:text="5星"/>
+
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_date"
+        android:layout_marginTop="6dp"
+        android:layout_alignStart="@id/tv_name"
+        tools:text="白云山"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv_location"
+        android:background="@color/grey"/>
+</RelativeLayout>

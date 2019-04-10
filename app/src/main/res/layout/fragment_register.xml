@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue"
+                tools:context=".register.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_marginTop="@dimen/tf_24_dp"
+        android:layout_marginStart="@dimen/tl_12_dp"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/NinetySixDp"
+        android:text="@string/register_title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ThirtyTwoSp" />
+
+    <EditText
+        android:id="@+id/et_input_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_register_title"
+        android:layout_marginEnd="@dimen/ThirtyTwoDp"
+        android:layout_marginStart="@dimen/ThirtyTwoDp"
+        android:layout_marginTop="@dimen/ThirtyTwoDp"
+        android:hint="请输入您的手机号码"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/EighteenSp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:theme="@style/MyEditText" />
+
+    <EditText
+        android:id="@+id/et_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_input_account"
+        android:layout_marginEnd="@dimen/ThirtyTwoDp"
+        android:layout_marginStart="@dimen/ThirtyTwoDp"
+        android:layout_marginTop="@dimen/ThirtyTwoDp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/EighteenSp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:theme="@style/MyEditText" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_input_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/SixteenDp"
+        android:background="@drawable/bg_login_button"
+        android:text="注册 →"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/EighteenSp" />
+
+
+</RelativeLayout>

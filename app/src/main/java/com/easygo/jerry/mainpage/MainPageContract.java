@@ -1,22 +1,16 @@
 package com.easygo.jerry.mainpage;
 
-import android.content.Context;
-
-import com.easygo.jerry.BasePresenter;
-import com.easygo.jerry.BaseView;
-import com.easygo.jerry.searchlocation.SearchLocationContract;
+import com.easygo.jerry.base.BasePresenter;
+import com.easygo.jerry.base.BaseView;
 
 public interface MainPageContract {
 
     interface View extends BaseView<Presenter>{
-
-        boolean isActive();
 
     }
 
 
     interface Presenter extends BasePresenter{
 
-        void result(int requestCode, int resultCode);
     }
 }

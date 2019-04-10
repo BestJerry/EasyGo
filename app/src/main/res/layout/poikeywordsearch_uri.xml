@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/snippet"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/title"
+        android:textColor="@android:color/black"/>
+
+
+    <ImageButton
+        android:id="@+id/ib_collect"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_toEndOf="@id/snippet"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_collect"/>
+
+    <ImageButton
+        android:id="@+id/ib_navigate"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/ib_collect"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_navigation"/>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".my.myinfo.MyInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称："
+            android:textSize="@dimen/EighteenSp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_edit_text"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:lines="1"
+            android:textSize="@dimen/SixteenSp"
+            android:theme="@style/Theme.EditText.Blue"/>
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_name"
+            android:text="性别："
+            android:textSize="@dimen/EighteenSp"/>
+
+        <EditText
+            android:id="@+id/et_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sex"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_edit_text"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:lines="1"
+            android:textSize="@dimen/SixteenSp"
+            android:theme="@style/Theme.EditText.Blue"/>
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_sex"
+            android:text="年龄："
+            android:textSize="@dimen/EighteenSp"/>
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_age"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_edit_text"
+            android:ellipsize="end"
+            android:inputType="number"
+            android:textSize="@dimen/SixteenSp"
+            android:theme="@style/Theme.EditText.Blue"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_age"
+            android:text="邮箱："
+            android:textSize="@dimen/EighteenSp"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_email"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_edit_text"
+            android:ellipsize="end"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/SixteenSp"
+            android:theme="@style/Theme.EditText.Blue"/>
+
+        <TextView
+            android:id="@+id/tv_hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_email"
+            android:text="兴趣爱好："
+            android:textSize="@dimen/EighteenSp"/>
+
+        <EditText
+            android:id="@+id/et_hobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hobby"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_edit_text"
+            android:ellipsize="end"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/SixteenSp"
+            android:theme="@style/Theme.EditText.Blue"/>
+
+        <TextView
+            android:id="@+id/tv_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_hobby"
+            android:text="个性签名："
+            android:textSize="@dimen/EighteenSp"/>
+
+        <EditText
+            android:id="@+id/et_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_introduction"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_edit_text"
+            android:ellipsize="end"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:gravity="top"
+            android:textSize="@dimen/SixteenSp"
+            android:theme="@style/Theme.EditText.Blue"/>
+
+
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_introduction"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/blue"
+            android:text="@string/update"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+package com.easygo.jerry.my.diary.adddiary;
+
+import android.content.ContentValues;
+
+import com.easygo.jerry.base.BasePresenter;
+import com.easygo.jerry.base.BaseView;
+
+/**
+ * Create by wujiewei on 2019/4/7
+ */
+public class AddDiaryContract {
+
+    interface View extends BaseView<Presenter>{
+
+    }
+
+    interface Presenter extends BasePresenter{
+
+        void addDiary(ContentValues contentValues);
+    }
+}

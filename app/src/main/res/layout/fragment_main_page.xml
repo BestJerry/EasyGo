@@ -4,10 +4,206 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.amap.api.maps.MapView
-        android:id="@+id/mapview_map"
+    <LinearLayout
+        android:id="@+id/top_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </com.amap.api.maps.MapView>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_scau"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_scau_name"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/top_layout"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_route"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="路线规划"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/linearlayout_2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_locate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="位置定位"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/linearlayout_2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_navigation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="位置导航"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearlayout_2"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_trip_plan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="出行计划"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/linearlayout_5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_offline_map"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="离线地图"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/linearlayout_5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_publish_dynamic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="发布动态"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_below="@id/linearlayout_4"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_toolbox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="工具箱"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearlayout_7"
+        android:gravity="center"
+        android:text="Develop by 15级软件工程R2班吴杰威"
+        android:textSize="20sp"/>
+
 
 </RelativeLayout>

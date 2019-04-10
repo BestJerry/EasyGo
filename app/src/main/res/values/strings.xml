@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">易行</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="register_title">注册易行账号</string>
+
+    <string name="loading_notification">请稍候</string>
+
+    <string name="route_demo">路径规划</string>
+
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="my_info">我的信息</string>
+    <string name="my_poi">我的兴趣点</string>
+    <string name="my_diary">我的日记</string>
+    <string name="edit_password">修改密码</string>
+    <string name="logout">退出登录</string>
+    <string name="confirm">确定</string>
+    <string name="complete">完成</string>
+    <string name="update">更新</string>
+    <string name="publish">发布</string>
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="locate">定位</string>
+    <string name="add_trip_plan">添加计划</string>
+    <string name="add_diary">添加日记</string>
+    <string name="delete_trip_plan">删除计划</string>
+    <string name="delete_diary">删除日记</string>
+    <string name="search">搜索</string>
 </resources>

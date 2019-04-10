@@ -3,9 +3,68 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorControlNormal">@color/white</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="Theme.Toolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:windowTitleSize">18sp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--自定义 EditText 样式，光标和下划线都设置为白色-->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <!--未激活状态-->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!--激活状态-->
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
+
+    <!--自定义 EditText 样式，光标和下划线都设置为白色-->
+    <style name="MyEditText_two" parent="Theme.AppCompat.Light">
+        <!--未激活状态-->
+        <item name="colorControlNormal">@android:color/black</item>
+        <!--激活状态-->
+        <item name="colorControlActivated">@android:color/black</item>
+    </style>
+
+    <!--自定义 EditText 样式，光标和下划线都设置为蓝色-->
+    <style name="Theme.EditText.Blue" parent="Theme.AppCompat.Light">
+        <!--未激活状态-->
+        <item name="colorControlNormal">@color/blue</item>
+        <!--激活状态-->
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+
+
+    <style name="Theme.CustomProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">
+            false
+        </item>
+        <item name="android:windowBackground">
+            @android:color/transparent
+        </item>
+        <item name="android:windowNoTitle">
+            true
+        </item>
+        <item name="android:windowIsFloating">
+            true
+        </item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
 </resources>

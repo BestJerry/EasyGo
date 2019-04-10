@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tv_title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题："
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_title_title"
+        android:layout_toEndOf="@id/tv_title_title"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="去图书馆看书"/>
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignStart="@id/tv_title_title"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="广州图书馆"/>
+
+    <TextView
+        android:id="@+id/tv_date_title"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_alignStart="@id/tv_title_title"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:text="建立日期："/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_date_title"
+        android:layout_alignTop="@id/tv_date_title"
+        tools:text="2019.04.05"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_date_title"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey"/>
+
+</RelativeLayout>

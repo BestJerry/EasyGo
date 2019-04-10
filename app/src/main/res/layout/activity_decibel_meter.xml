@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".toolbox.decibelmeter.DecibelMeterActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/darkgrey"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="0.00 dB"
+            android:id="@+id/tv_decibel"
+            tools:text="0.00 dB"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/head_layout"
+        android:layout_above="@id/bt_start"
+        android:layout_marginBottom="6dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="1分贝 刚能听到的声音"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="15分贝以下 感觉安静"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="30分贝 耳语的音量大小"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="40分贝 冰箱的嗡嗡声"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="60分贝 正常交谈的声音"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="70分贝 相当于走在闹市区"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="85分贝 汽车穿梭的马路上"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="95分贝 摩托车启动声音"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="100分贝 装修电钻的声音"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="110分贝 卡拉OK、大声播放MP3的声音"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="120分贝 飞机起飞时的声音"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="14sp"
+                android:text="150分贝 燃放烟花爆竹的声音"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"
+                android:text="  美国言语听力、协会提醒：长期在夜晚接受50分贝的噪音，容易导致心血管疾病；55分贝，会对儿童学习产生负面影响；60分贝，让人从睡梦中惊醒；70分贝，心肌梗死的发病率增加30%左右；超过110分贝，可能导致永久性听力损伤。"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/blue"
+        android:text="@string/start"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/blue"
+        android:text="@string/stop"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
